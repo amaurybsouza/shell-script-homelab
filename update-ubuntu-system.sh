@@ -28,10 +28,11 @@
 #
 #CODE -------------------------------------------------------------------- #
 # Update package lists
-sudo apt update ; apt upgrade -y
+sudo apt update ; apt list --upgradable
+sleep 3
 #
 # List the packages
-sudo apt list --upgradable
+sudo apt upgrade -y
 #
 # Remove unnecessary packages
 sudo apt  autoremove -y
