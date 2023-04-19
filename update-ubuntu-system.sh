@@ -27,17 +27,16 @@
 #          no variables needed yet
 #
 #CODE -------------------------------------------------------------------- #
-#
 # Update package lists
 sudo apt update ; apt upgrade -y
-
+#
 # List the packages
 sudo apt list --upgradable
-
+#
 # Remove unnecessary packages
 sudo apt  autoremove -y
-
+#
 # Clean up package cache
 sudo apt clean
-
+#
 echo "System update completed!"
